@@ -22,10 +22,6 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".DeptActivity" />
-        <activity android:name=".ReceiveActivity" />
-        <activity android:name=".InfoDeptActivity" />
-        <activity android:name=".InfoReceiveActivity"></activity>
     </application>
 
 </manifest>
