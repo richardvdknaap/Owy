@@ -9,8 +9,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity2"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-    />
+        android:layout_centerVertical="true"
+        android:text="Werkt nog niet" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="178dp"
+        android:text="Home" />
 </RelativeLayout>

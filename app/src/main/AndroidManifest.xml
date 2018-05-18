@@ -16,7 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".DeptActivity"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".ReceiveActivity"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".InfoDeptActivity"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".InfoReceiveActivity"
+            android:launchMode="singleTask"
+            />
 
         <meta-data
             android:name="preloaded_fonts"
