@@ -14,7 +14,7 @@ public class HomeActivity extends AppCompatActivity {
     public Button but4;
 
     public  void init(){
-        but2 = (Button)findViewById(R.id.button2);
+        but2 = (Button)findViewById(R.id.button_dept);
         but2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,7 +22,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(toy);
             }
         });
-        but1 = (Button)findViewById(R.id.button);
+        but1 = (Button)findViewById(R.id.button_receive);
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(toy);
             }
         });
-        but3 = (Button)findViewById(R.id.button3);
+        but3 = (Button)findViewById(R.id.button_info_receive);
         but3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(toy);
             }
         });
-        but4 = (Button)findViewById(R.id.button4);
+        but4 = (Button)findViewById(R.id.button_info_dept);
         but4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

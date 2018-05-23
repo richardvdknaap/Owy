@@ -12,7 +12,7 @@ public class DeptActivity extends AppCompatActivity {
     public Button but1;
 
     public  void init(){
-        but1 = (Button)findViewById(R.id.button);
+        but1 = (Button)findViewById(R.id.button_receive);
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
