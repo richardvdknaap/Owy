@@ -1,3 +1,71 @@
 <resources>
     <string name="app_name">OWY</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+        <string-array name="naamSchuld">
+            <item>Jantje</item>
+            <item>Pietje</item>
+            <item>Klaasje</item>
+            <item>Rudolf</item>
+            <item>Adolf</item>
+            <item>Mussolini</item>
+            <item>Willem</item>
+            <item>Suske</item>
+            <item>Wiske</item>
+            <item>Lambik</item>
+        </string-array>
+
+        <string-array name="schuldBedrag">
+                <item>$100.00</item>
+                <item>$1.50</item>
+                <item>$5.00</item>
+                <item>$15.87</item>
+                <item>$14.78</item>
+                <item>$18.50</item>
+                <item>$12.80</item>
+                <item>$15000.00</item>
+                <item>$3.50</item>
+                <item>$2.50</item>
+             </string-array>
+
+
+             <string-array name="naamOntvang">
+                <item>Niko</item>
+                <item>Columbo</item>
+                <item>Lisa</item>
+                <item>Bart</item>
+                <item>Homer</item>
+                <item>Marge</item>
+                <item>Crusty</item>
+                <item>Maggy</item>
+                <item>Shakespeare</item>
+                <item>Ezio Auditore da Firenze</item>
+            </string-array>
+
+            <string-array name="ontvangBedrag">
+                <item>$10.00</item>
+                <item>$10.50</item>
+                <item>$50.00</item>
+                <item>$1.87</item>
+                <item>$14.00</item>
+                <item>$15.50</item>
+                <item>$10.80</item>
+                <item>$1520.00</item>
+                <item>$3.75</item>
+                <item>$0.50</item>
+            </string-array>
+
 </resources>
