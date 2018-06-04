@@ -16,20 +16,6 @@ public class DeptActivity extends AppCompatActivity {
     String[] schuldBedrag;
 
 
-    public Button but1;
-
-    public  void init(){
-        but1 = (Button)findViewById(R.id.button_receive);
-        but1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent toy = new Intent(DeptActivity.this,HomeActivity.class);
-                startActivity(toy);
-            }
-        });
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +29,5 @@ public class DeptActivity extends AppCompatActivity {
         debtPageAdapter debtPageAdapter = new debtPageAdapter(this, naamSchuld, schuldBedrag);
         debtListView.setAdapter(debtPageAdapter);
 
-        //init();
     }
 }

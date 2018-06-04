@@ -21,4 +21,14 @@
         android:text="Bedrag"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/currTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/naamTextView"
+        android:layout_toStartOf="@+id/bedragTextView"
+        android:text="€"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
 </RelativeLayout>

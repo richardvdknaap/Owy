@@ -15,57 +15,97 @@
         completions."
     </string>
 
-        <string-array name="naamSchuld">
-            <item>Jantje</item>
-            <item>Pietje</item>
-            <item>Klaasje</item>
-            <item>Rudolf</item>
-            <item>Adolf</item>
-            <item>Mussolini</item>
-            <item>Willem</item>
-            <item>Suske</item>
-            <item>Wiske</item>
-            <item>Lambik</item>
-        </string-array>
+    <string-array name="naamSchuld">
+        <item>Jantje</item>
+        <item>Pietje</item>
+        <item>Klaasje</item>
+        <item>Rudolf</item>
+        <item>Adolf</item>
+        <item>Mussolini</item>
+        <item>Willem</item>
+        <item>Suske</item>
+        <item>Wiske</item>
+        <item>Lambik</item>
+        <item>Geralt</item>
+        <item>George</item>
+        <item>Pooh</item>
+        <item>Obama</item>
+        <item>Celine Dion</item>
+        <item>Yahweh</item>
+        <item>Zeus</item>
+        <item>Michael</item>
+        <item>Vsauce Here</item>
+        <item>Henry</item>
+    </string-array>
 
-        <string-array name="schuldBedrag">
-                <item>$100.00</item>
-                <item>$1.50</item>
-                <item>$5.00</item>
-                <item>$15.87</item>
-                <item>$14.78</item>
-                <item>$18.50</item>
-                <item>$12.80</item>
-                <item>$15000.00</item>
-                <item>$3.50</item>
-                <item>$2.50</item>
-             </string-array>
+    <string-array name="schuldBedrag">
+        <item>100.00</item>
+        <item>1.50</item>
+        <item>5.00</item>
+        <item>15.87</item>
+        <item>14.78</item>
+        <item>18.50</item>
+        <item>12.80</item>
+        <item>15000.00</item>
+        <item>350.00</item>
+        <item>250.00</item>
+        <item>1.00</item>
+        <item>15.00</item>
+        <item>57.00</item>
+        <item>45.77</item>
+        <item>178.30</item>
+        <item>84.57</item>
+        <item>43.81</item>
+        <item>15.00</item>
+        <item>0.50</item>
+        <item>452.50</item>
+    </string-array>
 
 
-             <string-array name="naamOntvang">
-                <item>Niko</item>
-                <item>Columbo</item>
-                <item>Lisa</item>
-                <item>Bart</item>
-                <item>Homer</item>
-                <item>Marge</item>
-                <item>Crusty</item>
-                <item>Maggy</item>
-                <item>Shakespeare</item>
-                <item>Ezio Auditore da Firenze</item>
-            </string-array>
+    <string-array name="naamOntvang">
+        <item>Niko</item>
+        <item>Columbo</item>
+        <item>Lisa</item>
+        <item>Bart</item>
+        <item>Homer</item>
+        <item>Marge</item>
+        <item>Crusty</item>
+        <item>Maggy</item>
+        <item>Shakespeare</item>
+        <item>Ezio</item>
+        <item>Edward</item>
+        <item>Squidward</item>
+        <item>Mr. Krabs</item>
+        <item>Beatrix</item>
+        <item>Bob</item>
+        <item>Dash</item>
+        <item>Violet</item>
+        <item>Frozone</item>
+        <item>Syndrome</item>
+        <item>Ass</item>
+    </string-array>
 
-            <string-array name="ontvangBedrag">
-                <item>$10.00</item>
-                <item>$10.50</item>
-                <item>$50.00</item>
-                <item>$1.87</item>
-                <item>$14.00</item>
-                <item>$15.50</item>
-                <item>$10.80</item>
-                <item>$1520.00</item>
-                <item>$3.75</item>
-                <item>$0.50</item>
-            </string-array>
+    <string-array name="ontvangBedrag">
+        <item>10.00</item>
+        <item>10.50</item>
+        <item>50.00</item>
+        <item>1.87</item>
+        <item>14.00</item>
+        <item>15.50</item>
+        <item>10.80</item>
+        <item>1520.00</item>
+        <item>3.75</item>
+        <item>0.50</item>
+        <item>1.00</item>
+        <item>15.00</item>
+        <item>5.00</item>
+        <item>7.80</item>
+        <item>1.40</item>
+        <item>5.51</item>
+        <item>80.10</item>
+        <item>152.00</item>
+        <item>38.75</item>
+        <item>8.50</item>
+    </string-array>
 
 </resources>
