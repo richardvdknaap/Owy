@@ -37,6 +37,19 @@ public class HomeActivity extends AppCompatActivity {
         itemAdapter itemAdapter = new itemAdapter(this, naamSchuld, schuldBedrag);
         schuldListView.setAdapter(itemAdapter);
 
+        schuldListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent (HomeActivity.this, debtInfoPageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
+
         ontvangenListView = (ListView) findViewById(R.id.ontvangenListView);
         naamOntvang = res.getStringArray(R.array.naamOntvang);
         ontvangBedrag = res.getStringArray(R.array.ontvangBedrag);
