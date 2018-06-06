@@ -1,31 +1,54 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "953277015709",
     "firebase_url": "https://owy1-1a70e.firebaseio.com",
     "project_id": "owy1-1a70e",
     "storage_bucket": "owy1-1a70e.appspot.com"
+=======
+    "project_number": "352535634244",
+    "firebase_url": "https://projectowy-ef954.firebaseio.com",
+    "project_id": "projectowy-ef954",
+    "storage_bucket": "projectowy-ef954.appspot.com"
+>>>>>>> origin/Richard
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:953277015709:android:5d18a7878191b1d6",
+=======
+        "mobilesdk_app_id": "1:352535634244:android:5d18a7878191b1d6",
+>>>>>>> origin/Richard
         "android_client_info": {
           "package_name": "com.example.richard.owy"
         }
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
           "client_id": "953277015709-kl9svhkh4l20fr05bi28rmrj5eebl857.apps.googleusercontent.com",
           "client_type": 3
         },
         {
           "client_id": "953277015709-kl9svhkh4l20fr05bi28rmrj5eebl857.apps.googleusercontent.com",
+=======
+          "client_id": "352535634244-9qonbk45r7h1jf3cjfc0udnh0mc0k9sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "352535634244-9qonbk45r7h1jf3cjfc0udnh0mc0k9sa.apps.googleusercontent.com",
+>>>>>>> origin/Richard
           "client_type": 3
         }
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyCAJF2AGPhDDjpaAwd26masaOi2FCM55H4"
+=======
+          "current_key": "AIzaSyBgp3EA3kG8JtoJ5dOhNFJIuDBaeMVV_LY"
+>>>>>>> origin/Richard
         }
       ],
       "services": {
@@ -33,8 +56,18 @@
           "status": 1
         },
         "appinvite_service": {
+<<<<<<< HEAD
           "status": 1,
           "other_platform_oauth_client": []
+=======
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352535634244-9qonbk45r7h1jf3cjfc0udnh0mc0k9sa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+>>>>>>> origin/Richard
         },
         "ads_service": {
           "status": 2
