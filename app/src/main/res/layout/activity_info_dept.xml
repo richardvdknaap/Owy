@@ -8,95 +8,6 @@
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:id="@+id/bedrag_dept"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="103dp"
-        android:layout_marginTop="17dp"
-        android:text="Bedrag"
-        android:textColor="#990008"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/textView_schuld1"
-        app:layout_constraintTop_toBottomOf="@+id/Informatie_dept" />
-
-    <TextView
-        android:id="@+id/IBAN_dept"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Unknown"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IBAN_212" />
-
-    <TextView
-        android:id="@+id/IBAN_212"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="IBAN"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username_dept" />
-
-    <TextView
-        android:id="@+id/Username_123"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Username"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider_dept" />
-
-    <TextView
-        android:id="@+id/username_dept"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Unknown"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Username_123" />
-
-    <TextView
-        android:id="@+id/Beschrijving_1234"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Beschrijving"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IBAN_dept" />
-
-    <TextView
-        android:id="@+id/textView_schuld1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="17dp"
-        android:text="Schuld"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Informatie_dept" />
-
-    <TextView
-        android:id="@+id/Beschrijving_dept"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Unknown"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Beschrijving_1234" />
-
-    <Button
-        android:id="@+id/Informatie_dept"
-        android:layout_width="386dp"
-        android:layout_height="60dp"
-        android:background="@color/colorAccent"
-        android:text="Informatie"
-        android:textColor="@android:color/background_light"
         android:id="@+id/textView_schuld1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -125,13 +36,6 @@
 
     <View
         android:id="@+id/divider_dept"
-        android:layout_width="368dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="15dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bedrag_dept" />
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginLeft="8dp"

@@ -23,17 +23,6 @@ public class HomeActivity extends AppCompatActivity {
     String[] naamOntvang;
     String[] ontvangBedrag;
 
-    public  void init(){
-        but2 = (Button)findViewById(R.id.button_dept);
-        but2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent toy = new Intent(HomeActivity.this,DeptActivity.class);
-                startActivity(toy);
-            }
-        });
-        but1 = (Button)findViewById(R.id.button_receive);
-        but1.setOnClickListener(new View.OnClickListener() {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,37 +46,26 @@ public class HomeActivity extends AppCompatActivity {
         //Round Floating button on HomeActivity. Links to receiveOrDebt
         FloatingActionButton faButton = findViewById(R.id.faButton);
         faButton.setOnClickListener(new View.OnClickListener(){
->>>>>>> Djaysen
             @Override
             public void onClick(View view) {
                 Intent startIntent = new Intent(getApplicationContext(), receiveOrDebtActivity.class);
                 startActivity(startIntent);
             }
         });
-<<<<<<< HEAD
-        but3 = (Button)findViewById(R.id.button_info_receive);
-        but3.setOnClickListener(new View.OnClickListener() {
-=======
 
         //te betalen knop
         Button schuldButton = (Button) findViewById(R.id.schuldButton);
         schuldButton.setOnClickListener(new View.OnClickListener() {
->>>>>>> Djaysen
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent (getApplicationContext(), DeptActivity.class);
                 startActivity(startIntent);
             }
         });
-<<<<<<< HEAD
-        but4 = (Button)findViewById(R.id.button_info_dept);
-        but4.setOnClickListener(new View.OnClickListener() {
-=======
 
         //te ontvangen knop
         Button ontvangButton = (Button) findViewById(R.id.ontvangButton);
         ontvangButton.setOnClickListener(new View.OnClickListener() {
->>>>>>> Djaysen
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent (getApplicationContext(), ReceiveActivity.class);
