@@ -1,17 +1,27 @@
 package com.example.richard.owy;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
-    public Button but1;
-    public Button but2;
-    public Button but3;
-    public Button but4;
+    ListView schuldListView;
+    ListView ontvangenListView;
+    String[] naamSchuld;
+    String[] schuldBedrag;
+    String[] naamOntvang;
+    String[] ontvangBedrag;
 
     public  void init(){
         but2 = (Button)findViewById(R.id.button_dept);
@@ -24,39 +34,67 @@ public class HomeActivity extends AppCompatActivity {
         });
         but1 = (Button)findViewById(R.id.button_receive);
         but1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent toy = new Intent(HomeActivity.this,ReceiveActivity.class);
-                startActivity(toy);
-            }
-        });
-        but3 = (Button)findViewById(R.id.button_info_receive);
-        but3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent toy = new Intent(HomeActivity.this,InfoReceiveActivity.class);
-                startActivity(toy);
-            }
-        });
-        but4 = (Button)findViewById(R.id.button_info_dept);
-        but4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent toy = new Intent(HomeActivity.this,InfoDeptActivity.class);
-                startActivity(toy);
-            }
-        });
-
-    }
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        init();
+
+        Resources res = getResources();
+
+        schuldListView = (ListView) findViewById(R.id.schuldListView);
+        naamSchuld = res.getStringArray(R.array.naamSchuld);
+        schuldBedrag = res.getStringArray(R.array.schuldBedrag);
+        itemAdapter itemAdapter = new itemAdapter(this, naamSchuld, schuldBedrag);
+        schuldListView.setAdapter(itemAdapter);
+
+        ontvangenListView = (ListView) findViewById(R.id.ontvangenListView);
+        naamOntvang = res.getStringArray(R.array.naamOntvang);
+        ontvangBedrag = res.getStringArray(R.array.ontvangBedrag);
+        receiveAdapter receiveAdapter = new receiveAdapter(this, naamOntvang, ontvangBedrag);
+        ontvangenListView.setAdapter(receiveAdapter);
+
+        //Round Floating button on HomeActivity. Links to receiveOrDebt
+        FloatingActionButton faButton = findViewById(R.id.faButton);
+        faButton.setOnClickListener(new View.OnClickListener(){
+>>>>>>> Djaysen
+            @Override
+            public void onClick(View view) {
+                Intent startIntent = new Intent(getApplicationContext(), receiveOrDebtActivity.class);
+                startActivity(startIntent);
+            }
+        });
+<<<<<<< HEAD
+        but3 = (Button)findViewById(R.id.button_info_receive);
+        but3.setOnClickListener(new View.OnClickListener() {
+=======
+
+        //te betalen knop
+        Button schuldButton = (Button) findViewById(R.id.schuldButton);
+        schuldButton.setOnClickListener(new View.OnClickListener() {
+>>>>>>> Djaysen
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent (getApplicationContext(), DeptActivity.class);
+                startActivity(startIntent);
+            }
+        });
+<<<<<<< HEAD
+        but4 = (Button)findViewById(R.id.button_info_dept);
+        but4.setOnClickListener(new View.OnClickListener() {
+=======
+
+        //te ontvangen knop
+        Button ontvangButton = (Button) findViewById(R.id.ontvangButton);
+        ontvangButton.setOnClickListener(new View.OnClickListener() {
+>>>>>>> Djaysen
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent (getApplicationContext(), ReceiveActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
 
     }
 }

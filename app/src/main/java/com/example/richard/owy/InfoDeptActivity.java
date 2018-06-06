@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class InfoDeptActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
     public Button but1;
 
     public  void init(){
@@ -26,6 +27,6 @@ public class InfoDeptActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_dept);
-        //init();
+
     }
 }

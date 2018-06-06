@@ -304,6 +304,19 @@
         android:layout_marginTop="8dp"
         android:text="Pepijn"
         android:textSize="20sp"
+        android:id="@+id/receiveTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:text="Te ontvangen"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/receiveListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -345,5 +358,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.498" />
 
+        app:layout_constraintTop_toBottomOf="@+id/receiveTextView"
+        app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>
 
