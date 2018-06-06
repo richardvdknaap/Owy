@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".debtInfoPageActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/debtInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:text="Schuld"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/usernamDebtTextVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/debtInfoTextView"
+        android:layout_marginTop="89dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/naamDebtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/debtInfoTextView"
+        android:layout_marginTop="140dp"
+        android:text="Naam" />
+
+    <TextView
+        android:id="@+id/bedragDebtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/debtInfoTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="52dp"
+        android:text="Bedrag"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/showNaamTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/naamDebtTextView"
+        android:layout_toStartOf="@+id/bedragDebtTextView"
+        android:text="Naam" />
+</RelativeLayout>

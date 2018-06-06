@@ -1,5 +1,6 @@
 package com.example.richard.owy;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.support.design.widget.FloatingActionButton;
@@ -41,20 +42,24 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent (HomeActivity.this, debtInfoPageActivity.class);
+                intent.putExtra("varName",position);
                 startActivity(intent);
             }
         });
-
-
-
-
-
 
         ontvangenListView = (ListView) findViewById(R.id.ontvangenListView);
         naamOntvang = res.getStringArray(R.array.naamOntvang);
         ontvangBedrag = res.getStringArray(R.array.ontvangBedrag);
         receiveAdapter receiveAdapter = new receiveAdapter(this, naamOntvang, ontvangBedrag);
         ontvangenListView.setAdapter(receiveAdapter);
+
+        ontvangenListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent (HomeActivity.this, receiveInfoPageActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //Round Floating button on HomeActivity. Links to receiveOrDebt
         FloatingActionButton faButton = findViewById(R.id.faButton);

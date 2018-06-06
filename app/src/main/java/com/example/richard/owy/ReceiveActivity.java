@@ -1,9 +1,12 @@
 package com.example.richard.owy;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class ReceiveActivity extends AppCompatActivity {
@@ -25,6 +28,14 @@ public class ReceiveActivity extends AppCompatActivity {
         ontvangBedrag = res.getStringArray(R.array.ontvangBedrag);
         receivePageAdapter receivePageAdapter = new receivePageAdapter(this, naamOntvang, ontvangBedrag);
         receiveListView.setAdapter(receivePageAdapter);
+
+        receiveListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent (ReceiveActivity.this, receiveInfoPageActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
