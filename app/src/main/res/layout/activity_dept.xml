@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ReceiveActivity">
+
 
     <TextView
+        android:id="@+id/teBetalenTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Werkt nog niet" />
+        android:text="Te betalen"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
-    <Button
-        android:id="@+id/button5"
+    <ListView
+        android:id="@+id/debtListView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="178dp"
-        android:text="Home" />
-</RelativeLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teBetalenTextView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp" />
+</android.support.constraint.ConstraintLayout>
+
