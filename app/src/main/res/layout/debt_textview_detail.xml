@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/debtPageNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Naam"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/debtPageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/debtPageNameView"
+        android:layout_marginEnd="17dp"
+        android:text="Bedrag"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/currTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/debtPageNameView"
+        android:layout_toStartOf="@+id/debtPageTextView"
+        android:text="€"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+</RelativeLayout>
