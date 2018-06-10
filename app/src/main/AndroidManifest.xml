@@ -46,7 +46,9 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
         <activity android:name=".debtRegistPageActivity" />
-        <activity android:name=".receiveOrDebtActivity"></activity>
+        <activity android:name=".receiveOrDebtActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>
