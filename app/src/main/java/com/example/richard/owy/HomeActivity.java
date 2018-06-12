@@ -57,6 +57,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent (HomeActivity.this, receiveInfoPageActivity.class);
+                intent.putExtra("varName",position);
                 startActivity(intent);
             }
         });

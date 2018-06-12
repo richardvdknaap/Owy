@@ -33,6 +33,7 @@ public class ReceiveActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent (ReceiveActivity.this, receiveInfoPageActivity.class);
+                intent.putExtra("varName",position);
                 startActivity(intent);
             }
         });
