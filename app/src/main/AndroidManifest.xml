@@ -45,10 +45,12 @@
 
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="Login" />
         <activity android:name=".debtRegistPageActivity" />
         <activity android:name=".receiveOrDebtActivity" />
-        <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Register"/>
     </application>
 
 </manifest>
