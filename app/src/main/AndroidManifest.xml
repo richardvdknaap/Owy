@@ -51,6 +51,8 @@
         <activity
             android:name=".SignUpActivity"
             android:label="Register"/>
+        <activity android:name=".debtInfoPageActivity" />
+        <activity android:name=".receiveInfoPageActivity"></activity>
     </application>
 
 </manifest>
