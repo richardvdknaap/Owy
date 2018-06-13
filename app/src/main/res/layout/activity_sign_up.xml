@@ -11,55 +11,73 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/colorPrimary">
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingLeft="15dp"
             android:paddingRight="15dp">
 
-            <EditText
-                android:id="@+id/editTextEmail"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:fontFamily="sans-serif"
-                android:hint="email"
-                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp">
 
-                android:textColorHint="#000000" />
+                <AutoCompleteTextView
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
-            <EditText
-                android:id="@+id/editTextPassword"
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:fontFamily="sans-serif"
-                android:hint="password"
-                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
 
-                android:textColorHint="#000000" />
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
 
             <Button
                 android:id="@+id/buttonSignUp"
+                style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="7dp"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
                 android:text="Register"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false" />
 
             <TextView
                 android:id="@+id/textViewLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:baselineAligned="false"
                 android:padding="15dp"
+
                 android:text="Already have an account? Login"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="#000000" />
+                android:textColor="@color/colorPrimary" />
 
 
         </LinearLayout>

@@ -14,8 +14,9 @@
         android:roundIcon="@mipmap/round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,10 +45,12 @@
 
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="Login" />
         <activity android:name=".debtRegistPageActivity" />
         <activity android:name=".receiveOrDebtActivity" />
-        <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Register"/>
         <activity android:name=".debtInfoPageActivity" />
         <activity android:name=".receiveInfoPageActivity"></activity>
     </application>
