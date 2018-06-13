@@ -49,8 +49,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="7dp"
                 android:text="Register"
-                android:textAllCaps="false"
-                android:textColor="@color/colorAccent" />
+                android:textAllCaps="false"/>
 
             <TextView
                 android:id="@+id/textViewLogin"
