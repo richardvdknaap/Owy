@@ -48,6 +48,8 @@
         <activity android:name=".debtRegistPageActivity" />
         <activity android:name=".receiveOrDebtActivity" />
         <activity android:name=".SignUpActivity" />
+        <activity android:name=".debtInfoPageActivity" />
+        <activity android:name=".receiveInfoPageActivity"></activity>
     </application>
 
 </manifest>

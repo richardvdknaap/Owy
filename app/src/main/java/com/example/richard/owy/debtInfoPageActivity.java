@@ -17,13 +17,12 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 public class debtInfoPageActivity extends AppCompatActivity {
-    String[] naamSchuld;
-    String[] schuldBedrag;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        String[] naamSchuld;
+        String[] schuldBedrag;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_debt_info_page);
         Resources res = getResources();
