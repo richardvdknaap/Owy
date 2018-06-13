@@ -7,11 +7,12 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class receiveInfoPageActivity extends AppCompatActivity {
+    String[] naamOntvang;
+    String[] ontvangBedrag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String[] naamOntvang;
-        String[] ontvangBedrag;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receive_info_page);
         Resources res = getResources();
