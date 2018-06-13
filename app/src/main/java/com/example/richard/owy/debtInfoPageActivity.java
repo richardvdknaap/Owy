@@ -7,6 +7,12 @@ public class debtInfoPageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        String[] naamSchuld;
+        String[] schuldBedrag;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_debt_info_page);
     }
