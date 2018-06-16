@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     String[] schuldBedrag;
     String[] naamOntvang;
     String[] ontvangBedrag;
+
     boolean loaded = false;
     ArrayList<String> names = new ArrayList<String>();
     ArrayList<String> bedragen = new ArrayList<String>();
