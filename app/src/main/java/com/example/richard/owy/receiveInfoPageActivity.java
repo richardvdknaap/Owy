@@ -80,8 +80,8 @@ public class receiveInfoPageActivity extends AppCompatActivity {
 
                 naamOntvang = namesOntvang.toArray(new String[0]);
                 ontvangBedrag = bedragenOntvang.toArray(new String[0]);
-                usernameOntvang = namesOntvang.toArray(new String[0]);
-                datumOntvang = bedragenOntvang.toArray(new String[0]);
+                usernameOntvang = usernamesOntvang.toArray(new String[0]);
+                datumOntvang = datumsOntvang.toArray(new String[0]);
                 ibanOntvang = ibansOntvang.toArray(new String[0]);
                 beschrijvingOntvang = beschrijvingsOntvang.toArray(new String[0]);
                 tv.setText(ontvangBedrag[position]);
