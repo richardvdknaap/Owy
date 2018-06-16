@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -89,6 +91,35 @@ public class debtInfoPageActivity extends AppCompatActivity {
                 tv5.setText(ibanSchuld[position]);
                 tv6.setText(beschrijvingSchuld[position]);
                 tv6.setMovementMethod(new ScrollingMovementMethod());
+                Button schuldDeleteBtn = (Button) findViewById(R.id.schuldDeleteBtn);
+                schuldDeleteBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        userDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+                            {
+                                long j = -1;
+
+                                for (DataSnapshot dsp : dataSnapshot.getChildren())
+                                {
+
+                                    if(String.valueOf(dsp.child("type").getValue()).equals("schuld")) {
+                                        j = j + 1;
+                                        if(j == position)
+                                            dsp.getRef().removeValue();
+                                    }
+                                }
+                            }
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                            }
+                        });
+                        Intent startIntent = new Intent(getApplicationContext(), HomeActivity.class);
+                        startActivity(startIntent);
+                    }
+                });
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {

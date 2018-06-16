@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -91,6 +93,34 @@ public class receiveInfoPageActivity extends AppCompatActivity {
                 tv5.setText(ibanOntvang[position]);
                 tv6.setText(beschrijvingOntvang[position]);
                 tv6.setMovementMethod(new ScrollingMovementMethod());
+                Button receiveDeleteBtn = (Button) findViewById(R.id.receiveDeleteBtn);
+                receiveDeleteBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        userDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+                            {
+                                long i = -1;
+                                for (DataSnapshot dsp : dataSnapshot.getChildren())
+                                {
+                                    if(String.valueOf(dsp.child("type").getValue()).equals("ontvangst")) {
+                                        i = i + 1;
+                                        if(i == position)
+                                            dsp.getRef().removeValue();
+                                    }
+
+                                }
+                            }
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                            }
+                        });
+                        Intent startIntent = new Intent(getApplicationContext(), HomeActivity.class);
+                        startActivity(startIntent);
+                    }
+                });
 
             }
 
