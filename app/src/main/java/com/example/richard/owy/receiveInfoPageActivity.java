@@ -117,6 +117,14 @@ public class receiveInfoPageActivity extends AppCompatActivity {
 
                             }
                         });
+                        try
+                        {
+                            Thread.sleep(3000);
+                        }
+                        catch (InterruptedException e)
+                        {
+                            System.out.println("got interrupted!");
+                        }
                         Intent startIntent = new Intent(getApplicationContext(), HomeActivity.class);
                         startActivity(startIntent);
                     }
@@ -132,11 +140,6 @@ public class receiveInfoPageActivity extends AppCompatActivity {
         });
 
 
-
-
-
-
-
-
     }
+
 }

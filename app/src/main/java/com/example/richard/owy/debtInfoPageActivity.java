@@ -20,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class debtInfoPageActivity extends AppCompatActivity {
     String[] naamSchuld;
@@ -116,6 +117,15 @@ public class debtInfoPageActivity extends AppCompatActivity {
 
                             }
                         });
+
+                        try
+                        {
+                            Thread.sleep(3000);
+                        }
+                        catch (InterruptedException e)
+                        {
+                            System.out.println("got interrupted!");
+                        }
                         Intent startIntent = new Intent(getApplicationContext(), HomeActivity.class);
                         startActivity(startIntent);
                     }
@@ -129,4 +139,5 @@ public class debtInfoPageActivity extends AppCompatActivity {
         });
 
     }
+
 }
