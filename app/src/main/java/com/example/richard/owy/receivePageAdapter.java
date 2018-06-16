@@ -42,6 +42,9 @@ public class receivePageAdapter extends BaseAdapter {
         String name = naamOntvang[position];
         String bedrag = ontvangbedrag[position];
 
+
+
+
         receivePageNameTextView.setText(name);
         receivePageAmountTextView.setText(bedrag);
         return v;
