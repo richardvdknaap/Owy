@@ -14,15 +14,11 @@
         android:roundIcon="@mipmap/round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-=======
+
         <activity android:name=".MainActivity"
             android:theme="@style/Theme.Design.NoActionBar"
             android:screenOrientation="portrait">
->>>>>>> master
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -56,18 +52,13 @@
 
         <activity
             android:name=".LoginActivity"
-<<<<<<< HEAD
+
             android:label="Login" />
-        <activity android:name=".debtRegistPageActivity" />
-        <activity android:name=".receiveOrDebtActivity" />
-        <activity
-            android:name=".SignUpActivity"
-            android:label="Register"/>
-        <activity android:name=".debtInfoPageActivity" />
-        <activity android:name=".receiveInfoPageActivity"></activity>
-=======
-            android:label="@string/title_activity_login"
-            android:screenOrientation="portrait"/>
+
+
+
+
+
         <activity android:name=".debtRegistPageActivity" />
         <activity android:name=".receiveOrDebtActivity"
             android:screenOrientation="portrait"/>
@@ -78,7 +69,7 @@
         <activity android:name=".receiveInfoPageActivity"
 
             android:screenOrientation="portrait"></activity>
->>>>>>> master
+
     </application>
 
 </manifest>
