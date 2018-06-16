@@ -84,4 +84,9 @@ public class ReceiveActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        this.recreate();
+    }
 }
