@@ -20,7 +20,7 @@ public class InfoReceiveActivity extends AppCompatActivity {
     EditText IBANText;
     EditText datumText;
     EditText beschrijvingText;
-    double bedrag;
+    String bedrag;
     String username;
     String naam;
     String IBAN;
@@ -35,7 +35,7 @@ public class InfoReceiveActivity extends AppCompatActivity {
         IBANText = (EditText) findViewById(R.id.IBANEditText2);
         datumText = (EditText) findViewById(R.id.datumEditText2);
         beschrijvingText = (EditText) findViewById(R.id.descEditText2);
-        bedrag = Double.parseDouble(bedragText.getText().toString());
+        bedrag = bedragText.getText().toString();
         username = usernameText.getText().toString();
         naam = naamText.getText().toString();
         IBAN = IBANText.getText().toString();

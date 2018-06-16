@@ -8,6 +8,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -15,6 +16,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,6 +27,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     AutoCompleteTextView editTextEmail;
     EditText editTextPassword;
     ProgressBar progressBar;
+    String UID;
+    ListView schuldListView;
+    ListView ontvangenListView;
+    String[] naamSchuld;
+    String[] schuldBedrag;
+    String[] naamOntvang;
+    String[] ontvangBedrag;
+    boolean loaded = false;
+    ArrayList<String> names = new ArrayList<String>();
+    ArrayList<String> bedragen = new ArrayList<String>();
+    private FirebaseDatabase mDatabase;
+    private DatabaseReference userDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
