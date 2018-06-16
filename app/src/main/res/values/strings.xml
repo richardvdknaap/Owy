@@ -61,6 +61,22 @@
         <item>452.50</item>
     </string-array>
 
+    <string-array name="usernameSchuld">
+        <item>Cerdjee4</item>
+    </string-array>
+
+    <string-array name="datumSchuld">
+        <item>07-06-1995</item>
+    </string-array>
+
+    <string-array name="ibanSchuld">
+        <item>NL16INGB0752686462</item>
+    </string-array>
+
+    <string-array name="beschrijvingSchuld">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget ultricies diam, sit amet semper arcu. Quisque nec sem felis. Mauris a porta eros, nec congue eros. Nullam mattis odio pellentesque luctus porta. Nulla pulvinar enim a tristique interdum. Nullam quis dapibus lacus. Ut eu sem libero. Integer consequat ante in lacinia tincidunt. Nullam interdum ultricies orci, at commodo arcu congue id. Sed quis sem vitae diam mollis auctor. Praesent non sodales risus. Duis sed ipsum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer justo augue, molestie ut porta a, commodo non ipsum. Proin eget blandit ipsum, at accumsan nulla.</item>
+    </string-array>
+
 
     <string-array name="naamOntvang">
         <item>Niko</item>
@@ -106,6 +122,22 @@
         <item>152.00</item>
         <item>38.75</item>
         <item>8.50</item>
+    </string-array>
+
+    <string-array name="usernameOntvang">
+        <item>Kvman12</item>
+    </string-array>
+
+    <string-array name="datumOntvang">
+        <item>12-7-1987</item>
+    </string-array>
+
+    <string-array name="ibanOntvang">
+        <item>NL12ABNA5874861437</item>
+    </string-array>
+
+    <string-array name="beschrijvingOntvang">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget ultricies diam, sit amet semper arcu. Quisque nec sem felis. Mauris a porta eros, nec congue eros. Nullam mattis odio pellentesque luctus porta. Nulla pulvinar enim a tristique interdum. Nullam quis dapibus lacus. Ut eu sem libero. Integer consequat ante in lacinia tincidunt. Nullam interdum ultricies orci, at commodo arcu congue id. Sed quis sem vitae diam mollis auctor. Praesent non sodales risus. Duis sed ipsum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer justo augue, molestie ut porta a, commodo non ipsum. Proin eget blandit ipsum, at accumsan nulla. </item>
     </string-array>
 
 </resources>
