@@ -78,8 +78,8 @@ public class debtInfoPageActivity extends AppCompatActivity {
 
                 naamSchuld = namesSchuld.toArray(new String[0]);
                 schuldBedrag = bedragenSchuld.toArray(new String[0]);
-                usernameSchuld = namesSchuld.toArray(new String[0]);
-                datumSchuld = bedragenSchuld.toArray(new String[0]);
+                usernameSchuld = usernamesSchuld.toArray(new String[0]);
+                datumSchuld = datumsSchuld.toArray(new String[0]);
                 ibanSchuld = ibansSchuld.toArray(new String[0]);
                 beschrijvingSchuld = beschrijvingsSchuld.toArray(new String[0]);
                 tv.setText(schuldBedrag[position]);
