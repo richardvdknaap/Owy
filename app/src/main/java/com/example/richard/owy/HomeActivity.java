@@ -43,7 +43,6 @@ public class HomeActivity extends AppCompatActivity {
     String[] schuldBedrag;
     String[] naamOntvang;
     String[] ontvangBedrag;
-    boolean loaded = false;
     ArrayList<String> namesSchuld = new ArrayList<String>();
     ArrayList<String> bedragenSchuld = new ArrayList<String>();
     ArrayList<String> namesOntvang = new ArrayList<String>();
@@ -156,10 +155,6 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
-
-        // Totaal Verschil
-
-       // TextView totaalVerschilBedrag = findViewById(R.id.totaalVerschilBedrag);
 
 
 
