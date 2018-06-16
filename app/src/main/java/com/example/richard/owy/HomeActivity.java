@@ -39,6 +39,7 @@ public class HomeActivity extends AppCompatActivity {
     String UID;
     ListView schuldListView;
     ListView ontvangenListView;
+    TextView totaalVerschilBedrag;
     String[] naamSchuld;
     String[] schuldBedrag;
     String[] naamOntvang;
@@ -48,6 +49,9 @@ public class HomeActivity extends AppCompatActivity {
     ArrayList<String> namesOntvang = new ArrayList<String>();
     ArrayList<String> bedragenOntvang = new ArrayList<String>();
     ArrayList<String> type = new ArrayList<String>();
+    public double numbersSchuld ;
+    public double numbersOntvang;
+    public double totaal;
     private FirebaseDatabase mDatabase;
     private DatabaseReference userDatabase;
 
@@ -60,6 +64,7 @@ public class HomeActivity extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         schuldListView = (ListView) findViewById(R.id.schuldListView);
         ontvangenListView = (ListView) findViewById(R.id.ontvangenListView);
+        totaalVerschilBedrag = (TextView) findViewById(R.id.totaalVerschilBedrag );
         mDatabase = FirebaseDatabase.getInstance();
         if (user != null) {
             UID = user.getUid();
@@ -88,10 +93,24 @@ public class HomeActivity extends AppCompatActivity {
                 itemAdapter itemAdapter = new itemAdapter(HomeActivity.this, naamSchuld, schuldBedrag);
                 schuldListView.setAdapter(itemAdapter);
 
+                for (int x = 0; x <  schuldBedrag.length; ++x)
+                {
+                    numbersSchuld = numbersSchuld + Double.valueOf( schuldBedrag[x]);
+                }
+
+
                 naamOntvang = namesOntvang.toArray(new String[0]);
                 ontvangBedrag = bedragenOntvang.toArray(new String[0]);
                 receiveAdapter receiveAdapter = new receiveAdapter(HomeActivity.this, naamOntvang, ontvangBedrag);
                 ontvangenListView.setAdapter(receiveAdapter);
+                for (int y = 0; y <  ontvangBedrag.length; ++y)
+                {
+                    numbersOntvang = numbersOntvang + Double.valueOf( ontvangBedrag[y]);
+                }
+                totaal = numbersOntvang - numbersSchuld;
+                totaalVerschilBedrag.setText(totaal+"");
+
+
 
             }
 
