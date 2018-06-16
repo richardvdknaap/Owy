@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.firebase.*;
 import com.google.firebase.auth.FirebaseAuth;
@@ -155,6 +156,12 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
+
+        // Totaal Verschil
+
+       // TextView totaalVerschilBedrag = findViewById(R.id.totaalVerschilBedrag);
+
+
 
 
     }
