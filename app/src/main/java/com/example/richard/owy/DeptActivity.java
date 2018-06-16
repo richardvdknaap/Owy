@@ -86,4 +86,9 @@ public class DeptActivity extends AppCompatActivity {
         });
 
     }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        this.recreate();
+    }
 }

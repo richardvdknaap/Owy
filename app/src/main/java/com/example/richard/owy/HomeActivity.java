@@ -54,6 +54,7 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -100,9 +101,6 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
-
-        Resources res = getResources();
-
 
 
 
@@ -160,4 +158,10 @@ public class HomeActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        this.recreate();
+    }
+
 }
