@@ -179,7 +179,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:background="@color/colorPrimary"
-        android:text="Delete"
+        android:text="Verwijderen"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
